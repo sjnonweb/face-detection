@@ -1,0 +1,107 @@
+.login-page-container {
+  position: relative;
+  .backlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 330px;    
+    background: linear-gradient(to top, #A70C22 0%, #ED4C5B 100%);
+    margin-right: 330px;
+    height: 100vh;
+    width: calc(100% - 330px);
+    z-index: 1;
+    .site-title {
+      margin-top: 35vh;
+      margin-left: 120px;
+      img.logo {
+        display: inline-block;
+        vertical-align: top;
+        height: 60px;
+        width: 60px;        
+      }
+      .name {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 60px;        
+      }
+    }
+    .site-info {
+      margin-left: 120px;
+      margin-top: 50px;
+      width: 450px;
+      text-align: justify;
+      color: white;
+      font-size: 16px;
+    }
+  }
+  .login-form-container {
+    position: absolute;
+    top: 20vh;
+    right: 130px;
+    height: 75vh;
+    width: 400px;
+    z-index: 2;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0.2px rgba(0, 0, 0, .1);
+    padding: 40px;
+    .header {
+      img.logo {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .name {
+        color: #DC4552;
+        font-weight: bold;
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 45px;        
+      }
+    }
+    .welcome-title {
+      margin-top: 40px;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+    .welcome-message {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: lightgray;
+    }
+    .login-form {
+      margin-top: 20px;
+      .form-group {
+        margin-bottom: 20px;
+        .control-label {
+          font-size: 16px;
+          color: white;
+          font-weight: 400;
+        }
+        input.form-control {
+          height: 40px;
+        }
+        input.submit-button {
+          margin-top: 35px;
+          width: 50%;          
+          background: linear-gradient(to top, #A70C22 0%, #ED4C5B 100%);
+          border: none;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;          
+        }
+        .incorrect-creds {
+          color: red;
+          font-size: 16px;        
+        }
+      }
+    }
+  }
+}
