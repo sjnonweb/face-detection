@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // third party
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Grid } from 'react-bootstrap';
 import { Provider } from 'react-redux';
 
