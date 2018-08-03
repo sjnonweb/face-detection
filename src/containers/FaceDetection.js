@@ -55,8 +55,8 @@ class FaceDetection extends Component {
     const { isLoggedIn, isDetecting, error, faces } = this.props;
     const { uploadedImage } = this.state;
 
-    const face = (faces.length > 0) && faces[0] || null;
-    const attributes = face && face.attributes || null;
+    const face = ((faces.length > 0) && faces[0]) || null;
+    const attributes = (face && face.attributes) || null;
     let age = 0;
     let race = '';
     let gender = '';
@@ -193,7 +193,7 @@ class FaceDetection extends Component {
                 {error.length > 0 &&
                   error[0].Message
                 }
-                {error.length == 0 &&
+                {error.length === 0 &&
                   `There was an error!!`
                 }
               </div>
